@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script> 
 </head>
 <body>
     <header>
@@ -13,7 +15,7 @@
     
     <section>
         <h2>Summary</h2>
-        <p>Hey there i'm Yusuf Bolaji Abdulazeez a graduate of statistics passioante about software development</p>
+        <p>Hey there i'm Yusuf Bolaji Abdulazeez a graduate of Statistics passioante about software development</p>
     </section>
     
     <section>
@@ -59,23 +61,9 @@
                     <option value="medium">Medium</option>
                     <option value="high">High</option>
                 </select>
-                
                 <input type="submit" value="Submit">
             </form>
         </div>
     </section>
-
-    <script>
-        function validateForm() {
-            var name = document.forms["contactForm"]["name"].value;
-            var email = document.forms["contactForm"]["email"].value;
-            var message = document.forms["contactForm"]["message"].value;
-
-            if (name == "" || email == "" || message == "") {
-                alert("All fields must be filled out");
-                return false;
-            }
-        }
-    </script>
 </body>
 </html>
