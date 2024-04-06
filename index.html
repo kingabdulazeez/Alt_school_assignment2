@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Yusuf Bolaji Abdulazeez(yusboldydx23@gmail.com)</h1>
+        <p>A passionate learner and aspiring web developer.</p>
+    </header>
+    
+    <section>
+        <h2>Summary</h2>
+        <p>Hey there i'm Yusuf Bolaji Abdulazeez a graduate of statistics passioante about software development</p>
+    </section>
+    
+    <section>
+        <h2>Education</h2>
+        <ul>
+            <li>Bachelor's of Technology(B.Tech) Degree in Statistics - Federal University of Technology, Minna(FUTMINNA)</li>
+            <li>Back-End Certificate - Online Course Alt_School Africa</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>Job Experiences</h2>
+        <p>Office Assistance @ NCT Academy V.O Esan plaza ring road Ibadan<br>
+        Co-Owner Oromitope Telecoms Dugbe,Ibadan</p>
+    </section>
+    
+    <section>
+        <h2>Hobby</h2>
+        <p>My hobbies include Coding, Browsing, travelling, and Reading</p>
+    </section>
+    
+    <section>
+        <h2>Other Skills</h2>
+        <p>Data Analysis,Microsoft Excel,Ms-word,Ms-Powerpoint</p>
+    </section>
+    
+    <section class="content">
+        <div>
+            <h2>Contact</h2>
+            <form name="contactForm" onsubmit="return validateForm()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your Full Name">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email">
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+                
+                <label for="priority">Priority:</label>
+                <select id="priority" name="priority">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <script>
+        function validateForm() {
+            var name = document.forms["contactForm"]["name"].value;
+            var email = document.forms["contactForm"]["email"].value;
+            var message = document.forms["contactForm"]["message"].value;
+
+            if (name == "" || email == "" || message == "") {
+                alert("All fields must be filled out");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
